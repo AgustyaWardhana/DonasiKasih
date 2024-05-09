@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Donasi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'poppins',sans-serif;
+		}
+		body{
+			display: flex;
+			height: 100vh;
+			justify-content: center;
+			align-items: center;
+			padding: 10px;
+			background: linear-gradient(135deg, #71b7e6, #026370);
+		}
+		.container {
+			max-width: 700px;
+			width: 100%;
+			background: #fff;
+			padding: 25px 30px;
+			border-radius: 5px;
+            margin-top: 10px;
+            width: 95%;/* Lebar card */
+            margin: 0 auto;/* Mengatur card berada di tengah */
+            padding: 20px;/* Ruang antara card dan elemen di dalamnya */
+		}
+		.container .title{
+			font-size: 25px;
+			font-weight: 600;
+			position: relative;
+		}
+		.container .title::before{
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 3px;
+			width: 30px;
+			background: linear-gradient(135deg, #71b7e6, #9b59b6);
+		}
+		.container form .user-details{
+			display: flex;
+			margin: 20px 0 12px 0;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		form .user-details .input-box{
+			width: calc(100% / 2 - 20px);
+			margin-bottom: 15px;
+		}
+		.user-details .input-box details{
+			display: block;
+			font-weight: 500;
+			margin-bottom: 5px;
+		}		
+		.user-details .input-box input {
+			height: 45px;
+			width: 100%;
+			outline: none;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			padding-left: 15px;
+			font-size: 16px;
+			border-bottom-width: 2px;
+			transition: all 0.3s ease;
+		}
+		.user-details .input-box input:focus,
+		.user-details .input-box input:valid{
+			border-color: #9b59b6;
+        }
+		@media (max-width: 484px){
+			.container{
+				max-width: 100%;
+			}
+		}
+        .background {
+            background-image: url(img/bgdonasi.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+	</style>
+
+</head>
+<body class="background">
+	<div class="container">
+		<div class="title">Data Donasi</div>
+		<form>
+			<div class="user-details">
+			<div class="input-box">
+				<span class="details">Nama Lengkap</span>
+				<input type="text" name="namalengkap" autofocus="" required=""/>
+			</div>
+            <div class="input-box">
+				<span class="details">Metode Pembayaran</span>
+				<div class="col-sm-10">
+                    <select name="metodePembayaran" id="metodePembayaran">
+                        <option value="">- Pilih Metode Pembayaran -</option>
+                        <option value="kartuKredit">Kartu Kredit</option>
+                        <option value="transferBank">Transfer Bank</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                </div>
+			</div>
+			<div class="input-box">
+				<span class="details">Alamat email</span>
+				<input type="text" name="alamatemail" required="" />
+			</div>
+            <div class="input-box">
+				<span class="details">Jumlah Donasi</span>
+				<input type="text" name="jumlahdonasi" />
+			</div>
+            <div class="input-box">
+				<span class="details">No.Telepon</span>
+				<input type="text" name="no.telp" />
+			</div>
+            <div class="input-box">
+				<span class="details">Upload Bukti Donasi</span>
+                <input type="file" id="uploadGambar" name="gambar" required="">
+			</div>
+            <div class="input-box">
+				<span class="details">Alamat</span>
+				<input type="text" name="alamat" />
+			</div>
+            <div class="mb-3 row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="approvalCheckbox" required>
+                        <label class="form-check-label" for="approvalCheckbox">
+                            Saya menyetujui syarat dan ketentuan donasi.
+                        </label>
+                    </div>
+                </div>
+            </div>  
+
+            
+			<div class="mb-3 row">
+				<div class="col-sm-2"></div>
+                <div class="col-sm-12">
+                    <input type="submit" value="Simpan" class="btn btn-primary" />
+                    <input type="reset" value="Batal" class="btn btn-danger" />
+                </div>
+            </div>
+
+			</div>
+		</div>
+		</form>
+	</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+</body>
+</html>

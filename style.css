@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Open+Sans:wght@500&family=Wix+Madefor+Text&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: 600px;
+}
+
+#section2 {
+  height: 600px;
+}
+body{
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Wix Madefor Text', sans-serif;
+}
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.70)), url(img/bg.jpg);
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: #fff;
+}
+
+.container h3{
+  font-weight: 600;
+}
+
+.container p{
+  font-weight: 350;
+  font-size: 20px;
+}
+
+.container .btn{
+  font-weight: 650;
+}
+
+.lingkaran {
+    display: inline-block;
+    border-radius: 50%;
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    color: #fff;
+    background-color: #e68a22;
+}
+
+.lingkaran i {
+    position: relative;
+    top: 30px;
+}
+
+/* tentang kami */
+.tentangkami-wrapper{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tentangkami-wrapper .content-img {
+    flex: 0 0 50%;
+    max-width: 510px;
+}
+
+.tentangkami-wrapper .content-tentang {
+    flex: 0 0 50%;
+}
+
+.content-img img {
+    width: 100%;
+}
+
+.content-tentang .label-tentang {
+    font-size: 15px;
+    padding-left: 15px;
+    background-color: #312d42;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 20px;
+}
+
+.content-tentang .heading-tentang {
+    font-size: 40px;
+    font-weight: 700;
+    width: 70%;
+    margin: 20px 0;
+}
+
+.content-tentang .subheading-tentang {
+    font-size: 15px;
+    width: 70%;
+}
+
+.content-tentang .angka-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.angka-wrapper .box-angka {
+    text-align: center;
+    background: #e68a22;
+    border-radius: 0px 0px 0px 0px;
+    padding: 60px 60px;
+}
+
+
+.box-angka h1 {
+    font-weight: 800;
+    color: #000;
+    font-size: 45px;
+}
+
+/* kenapa DonasiKasih */
+.container .heading-judul{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Pilihan Donasi Kasih */
+.container .pilihan-judul{
+  font-size: 40px;
+  font-weight: 700;
+  margin: 20px 0;
+  text-align:center;
+  margin-top: 100px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 25px;
+}
+
+/* Bagian Card Vertikal */
+.row {
+    margin: 0 0 !important;
+  }
+  
+  .course_card {
+    margin: 25px 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ebe5dc;
+    background-clip: border-box;
+    transition: 0.25s ease-in-out;
+  }
+  .course_card_img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .course_card_img img {
+    height: 250px;
+    width: 100%;
+    transition: 0.25s all;
+  }
+  .course_card_img img:hover {
+    transform: translateY(-3%);
+  }
+  .course_card_content {
+    padding: 16px;
+  }
+  .course_card_content h5 {
+    font-family: nunito sans;
+    font-family: 18px;
+  }
+  .course_card_content p {
+    font-family: nunito sans;
+    text-align: justify;
+  }
+  .course_card_footer {
+    padding: 10px 0px;
+    margin: 16px;
+  }
+  .course_card_footer a {
+    text-decoration: none;
+    font-family: nunito sans;
+    margin: 0 100px 0 0;
+    text-transform: uppercase;
+    color: #f96332;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .course_card:hover {
+    transform: scale(1.025);
+    border-radius: 0.375rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.25);
+  }
+  .course_card:hover .course_card_img img {
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+  }
+
+/* End Bagian Card Vertikal */
+
+/* Start Progress Bar */
+.bar{
+  height: 100vh; 
+  display: flex;
+  align-items: center; 
+  justify-content:space-between;
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+.container-bar {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 0 0px;
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+
+.container-bar .skills-box {
+  width: 70%;
+  margin: 10px 0;
+}
+
+.skills-box .title {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+.skills-box .skills-bar {
+  height: 8px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 40px;
+  margin-bottom: -30px;
+  background: #000;
+}
+
+.skills-bar .skills-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 30%; 
+  border-radius: 6px;
+  background: #f96332;
+}
+
+.skills-per .tooltip {
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #000;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #000;
+}
+
+.skills-per.donasi2 {
+  width: 50%;
+}
+
+.skills-per.donasi3 {
+  width: 15%;
+}
+
+/* footer */
+.footer {
+  background: #312d42;
+  padding: 60px 0px;
+}
+
+.sosmed {
+  i {
+    font-size: 50px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 900;
+}
+
+h6 {
+  padding: 0;
+  margin-top: 14px;
+}
+
+
+
